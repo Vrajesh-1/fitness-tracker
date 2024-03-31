@@ -11,7 +11,7 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("Hello to Fitness Tracker API");
 });
-const MONGODB_URI = "mongodb://localhost:27017/";
+const MONGODB_URI = "mongodb+srv://Vrajesh:admin@cluster0.pxldo8w.mongodb.net/fitness";
 mongoose.connect(
   MONGODB_URI,
   { 
