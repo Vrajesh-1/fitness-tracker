@@ -86,7 +86,7 @@ function Dashboard() {
 
   React.useEffect(() => {
     axios
-      .get("https://fitness-tracker-mern.herokuapp.com/exercises")
+      .get("https://fitness-tracker-vex9.onrender.com/exercises")
       .then((response) => {
         setExercises(response.data);
       })
@@ -97,7 +97,7 @@ function Dashboard() {
 
   const deleteExercise = (id) => {
     axios
-      .delete("https://fitness-tracker-mern.herokuapp.com/exercises/" + id)
+      .delete("https://fitness-tracker-vex9.onrender.com/exercises/" + id)
       .then((response) => {
         console.log(response.data);
       });
